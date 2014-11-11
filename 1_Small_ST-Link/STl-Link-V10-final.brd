@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="mil"/>
+<grid distance="10" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="12.5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -79,7 +79,7 @@
 <wire x1="38.08" y1="0" x2="38.08" y2="18.085" width="0" layer="20"/>
 <wire x1="38.08" y1="18.085" x2="-1.27" y2="18.085" width="0" layer="20"/>
 <wire x1="-1.27" y1="18.085" x2="-1.27" y2="0" width="0" layer="20"/>
-<text x="34.29" y="13.97" size="0.8128" layer="25" font="vector" rot="R90">IR-
+<text x="33.655" y="14.2875" size="0.8128" layer="25" font="vector" rot="R90">IR-
 Send</text>
 <text x="34.925" y="16.51" size="0.8128" layer="25" font="vector" rot="R90">-</text>
 <text x="34.29" y="13.97" size="0.8128" layer="25" font="vector">+</text>
@@ -88,8 +88,16 @@ Send</text>
 <text x="29.845" y="4.445" size="1.27" layer="25" font="vector">IR-IN</text>
 <text x="33.655" y="2.54" size="1.27" layer="25" font="vector">+</text>
 <text x="33.655" y="0.635" size="1.27" layer="25" font="vector">-</text>
-<text x="31.75" y="12.7" size="0.8128" layer="28" font="vector" rot="MR0">www.neuby.de </text>
-<text x="33.02" y="13.97" size="0.8128" layer="28" font="vector" rot="MR0">STM-IRMP V0.1</text>
+<text x="33.9725" y="11.43" size="0.8128" layer="28" font="vector" rot="MR0">www.neuby.de </text>
+<text x="33.02" y="13.97" size="0.8128" layer="28" font="vector" rot="MR0">STM-IRMP V1.0</text>
+<wire x1="34.6075" y1="10.4775" x2="34.6075" y2="13.0175" width="0.254" layer="25"/>
+<wire x1="34.6075" y1="6.6675" x2="34.6075" y2="9.2075" width="0.254" layer="25"/>
+<wire x1="33.9725" y1="14.2875" x2="33.9725" y2="16.8275" width="0.254" layer="25"/>
+<text x="11.1125" y="10.16" size="1.4224" layer="25" font="vector">TSOP</text>
+<text x="6.0325" y="16.1925" size="1.4224" layer="25" font="vector">STM32-IR-Small</text>
+<text x="6.0325" y="15.24" size="0.8128" layer="25" font="vector">V1.0 www.neuby.de</text>
+<text x="24.13" y="10.4775" size="0.8128" layer="26" font="vector" rot="MR90">100</text>
+<text x="18.0975" y="12.065" size="0.8128" layer="26" font="vector" rot="MR90">220</text>
 </plain>
 <libraries>
 <library name="con-lsta">
@@ -689,11 +697,12 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="SV1" library="con-lsta" package="FE05-2" value="" x="4.445" y="6.985" rot="R90">
+<element name="SV1" library="con-lsta" package="FE05-2" value="" x="4.445" y="6.985" smashed="yes" rot="R90">
 <attribute name="OC_NEWARK" value="unknown" x="10.795" y="27.305" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="" x="10.795" y="27.305" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="" x="10.795" y="27.305" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="10.795" y="27.305" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="9.144" y="0.635" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
 <element name="R1" library="rcl" package="0204/7" value="220" x="20.32" y="10.16" smashed="yes" rot="MR90"/>
 <element name="R2" library="rcl" package="0204/7" value="100" x="22.86" y="10.16" smashed="yes" rot="MR90">
@@ -709,9 +718,7 @@ design rules under a new name.</description>
 <attribute name="OC_FARNELL" value="9707727" x="14.84" y="-33.575" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
 <element name="H1" library="holes" package="2,8" value="MOUNT-HOLE2.8" x="27.94" y="8.89"/>
-<element name="R3" library="rcl" package="R0805W" value="100" x="22.86" y="10.16" smashed="yes" rot="MR90">
-<attribute name="VALUE" x="20.32" y="9.525" size="1.27" layer="28" rot="MR90"/>
-</element>
+<element name="R3" library="rcl" package="R0805W" value="100" x="22.86" y="10.16" smashed="yes" rot="MR90"/>
 <element name="R4" library="rcl" package="R0805W" value="220" x="20.32" y="10.16" smashed="yes" rot="MR90"/>
 <element name="C2" library="rcl" package="C1206K" value="4,7uF" x="13.97" y="13.97" smashed="yes" rot="MR0">
 <attribute name="NAME" x="15.57" y="15.07" size="1.016" layer="26" rot="MR0"/>
@@ -729,12 +736,18 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="2.54" y="17.78" size="1.27" layer="28" rot="MR180"/>
 </element>
 <element name="T1" library="transistor" package="SOT23" value="BC847" x="9.685" y="5.635" rot="MR90"/>
-<element name="R7" library="rcl" package="R0805W" value="10" x="25.32" y="4.125" rot="MR180"/>
+<element name="R7" library="rcl" package="R0805W" value="10" x="25.32" y="4.125" smashed="yes" rot="MR180">
+<attribute name="NAME" x="24.685" y="2.855" size="1.27" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="25.32" y="6.03" size="1.27" layer="28" rot="MR180"/>
+</element>
 <element name="SEND" library="led" package="CHIPLED_1206" value="" x="26.355" y="15.795" smashed="yes" rot="R270">
 <attribute name="NAME" x="24.45" y="13.255" size="1.27" layer="25"/>
 <attribute name="VALUE" x="25.085" y="13.255" size="1.27" layer="27"/>
 </element>
-<element name="R9" library="rcl" package="R0805W" value="220" x="19.605" y="2.385" rot="MR0"/>
+<element name="R9" library="rcl" package="R0805W" value="220" x="19.605" y="2.385" smashed="yes" rot="MR0">
+<attribute name="NAME" x="20.24" y="3.655" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="21.1925" y="0.1625" size="1.27" layer="28" rot="MR0"/>
+</element>
 <element name="D1" library="diode" package="SOD123" value="" x="23.575" y="3.18"/>
 <element name="X1" library="con-lumberg" package="1501_03" value="1501_03" x="13.65" y="2.935" rot="R180">
 <attribute name="OC_NEWARK" value="unknown" x="13.65" y="2.935" size="1.778" layer="27" rot="R180" display="off"/>
@@ -745,19 +758,23 @@ design rules under a new name.</description>
 <element name="C3" library="rcl" package="C1206K" value="4,7uF" x="3.335" y="15.4" smashed="yes">
 <attribute name="NAME" x="1.735" y="16.5" size="1.016" layer="25"/>
 </element>
-<element name="SV4" library="con-lsta" package="FE05-1" value="" x="0.635" y="6.985" rot="R90">
+<element name="SV4" library="con-lsta" package="FE05-1" value="" x="0.635" y="6.985" smashed="yes" rot="R90">
 <attribute name="OC_NEWARK" value="unknown" x="0.635" y="6.985" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="" x="0.635" y="6.985" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="" x="0.635" y="6.985" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="0.635" y="6.985" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="-1.016" y="6.985" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="PWR" library="led" package="CHIPLED_1206" value="" x="8.89" y="3.175"/>
+<element name="PWR" library="led" package="CHIPLED_1206" value="" x="8.89" y="3.175" smashed="yes">
+<attribute name="NAME" x="7.62" y="1.905" size="1.27" layer="25" rot="R90"/>
+<attribute name="VALUE" x="11.43" y="1.905" size="1.27" layer="27" rot="R90"/>
+</element>
 <element name="IR-SEND+" library="wirepad" package="SMD1,27-2,54" value="" x="36.195" y="14.605" smashed="yes" rot="R90">
 <attribute name="VALUE" x="36.195" y="14.605" size="0.0254" layer="27" rot="R90"/>
 </element>
 <element name="LED" library="wirepad" package="SMD1,27-2,54" value="" x="36.195" y="16.51" smashed="yes" rot="MR270">
 <attribute name="VALUE" x="36.195" y="16.51" size="0.0254" layer="28" rot="MR270"/>
-<attribute name="NAME" x="38.595" y="17.31" size="1.27" layer="26" rot="MR0"/>
+<attribute name="NAME" x="34.76" y="17.3225" size="1.27" layer="26" rot="MR270"/>
 </element>
 <element name="IR+" library="wirepad" package="SMD1,27-2,54" value="" x="36.195" y="3.175" smashed="yes" rot="R90">
 <attribute name="VALUE" x="36.195" y="3.175" size="0.0254" layer="27" rot="R90"/>
@@ -783,7 +800,7 @@ design rules under a new name.</description>
 </element>
 <element name="5VIN" library="wirepad" package="SMD1,27-2,54" value="" x="36.195" y="3.175" smashed="yes" rot="MR90">
 <attribute name="VALUE" x="36.195" y="3.175" size="0.0254" layer="28" rot="MR90"/>
-<attribute name="NAME" x="32.855" y="5.575" size="1.27" layer="26" rot="MR270"/>
+<attribute name="NAME" x="33.49" y="4.94" size="1.27" layer="26" rot="MR270"/>
 </element>
 <element name="PC+" library="wirepad" package="SMD1,27-2,54" value="" x="36.195" y="10.795" smashed="yes" rot="R90">
 <attribute name="VALUE" x="36.195" y="10.795" size="0.0254" layer="27" rot="R90"/>
@@ -809,7 +826,6 @@ design rules under a new name.</description>
 </element>
 <element name="G6" library="wirepad" package="SMD1,27-2,54" value="" x="36.195" y="14.605" smashed="yes" rot="MR90">
 <attribute name="VALUE" x="36.195" y="14.605" size="0.0254" layer="28" rot="MR90"/>
-<attribute name="NAME" x="33.795" y="13.805" size="1.27" layer="26" rot="MR180"/>
 </element>
 </elements>
 <signals>
