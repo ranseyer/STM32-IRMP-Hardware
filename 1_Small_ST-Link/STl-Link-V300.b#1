@@ -109,9 +109,9 @@
 <text x="16.51" y="3.81" size="1.016" layer="26" font="vector" rot="MR0">100R</text>
 <text x="20.7025" y="2.2225" size="1.016" layer="28" font="vector" rot="MR90">-</text>
 <text x="3.11" y="4.445" size="0.8128" layer="26" font="vector" rot="MR180">5V</text>
-<text x="3.11" y="9.525" size="0.8128" layer="26" font="vector" rot="MR180">CLK</text>
+<text x="3.11" y="9.525" size="0.8128" layer="26" font="vector" rot="MR180">SWIM</text>
 <text x="3.11" y="12.065" size="0.8128" layer="26" font="vector" rot="MR180">GND</text>
-<text x="3.11" y="14.605" size="0.8128" layer="26" font="vector" rot="MR180">DIO</text>
+<text x="3.11" y="14.605" size="0.8128" layer="26" font="vector" rot="MR180">NRST</text>
 <text x="9.525" y="15.875" size="0.6096" layer="26" font="vector" rot="MR0">220R_LED</text>
 <text x="4.445" y="4.256" size="0.8128" layer="25" font="vector" rot="R180">5V</text>
 <text x="5.08" y="6.796" size="0.8128" layer="25" font="vector" rot="R180">3V3</text>
