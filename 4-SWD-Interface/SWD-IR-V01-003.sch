@@ -5164,7 +5164,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="R7" gate="G$1" x="101.6" y="-5.08" rot="R180"/>
 <instance part="SV1" gate="1" x="124.46" y="96.52" rot="R270"/>
 <instance part="GND2" gate="1" x="127" y="81.28"/>
-<instance part="JP1" gate="G$1" x="109.22" y="81.28" rot="R90"/>
+<instance part="JP1" gate="G$1" x="109.22" y="81.28" smashed="yes" rot="R90">
+<attribute name="NAME" x="106.68" y="78.74" size="1.778" layer="95" font="vector" rot="R90"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -5177,10 +5179,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="119.38" y1="88.9" x2="119.38" y2="86.36" width="0.1524" layer="91"/>
 <junction x="119.38" y="86.36"/>
 <pinref part="SV1" gate="1" pin="1"/>
-<label x="162.56" y="63.5" size="1.778" layer="95"/>
 <pinref part="JP1" gate="G$1" pin="2"/>
 <wire x1="114.3" y1="86.36" x2="109.22" y2="86.36" width="0.1524" layer="91"/>
 <junction x="114.3" y="86.36"/>
+<label x="114.3" y="86.36" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="GND" class="1">
@@ -5234,10 +5236,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="SV1" gate="1" pin="3"/>
 <wire x1="124.46" y1="88.9" x2="124.46" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="83.82" x2="124.46" y2="22.86" width="0.1524" layer="91"/>
-<label x="124.46" y="45.72" size="1.778" layer="95" rot="R90"/>
+<label x="124.46" y="22.86" size="1.778" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
-<net name="SWIM-IR-IN" class="0">
+<net name="IO" class="0">
 <segment>
 <wire x1="76.2" y1="73.66" x2="55.88" y2="73.66" width="0.1524" layer="91"/>
 <label x="58.42" y="73.66" size="1.778" layer="95"/>
@@ -5247,6 +5249,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="121.92" y1="88.9" x2="121.92" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="53.34" x2="76.2" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="53.34" x2="76.2" y2="73.66" width="0.1524" layer="91"/>
+<label x="121.92" y="53.34" size="1.778" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="PWR-" class="0">
